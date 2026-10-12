@@ -63,7 +63,7 @@ const setUpDockAppHover = (container) => {
 
 function Dock() {
   const dockRef = useRef(null);
-  const {openWindow,closeWindow,windowList} = useWindowStore();
+  const { openWindow, closeWindow, windowList } = useWindowStore();
 
   useGSAP(() => {
     const dock = dockRef.current;
@@ -75,13 +75,13 @@ function Dock() {
   }, []);
 
   const toggleApp = (app) => {
-    if(!app.canOpen) return;
+    if (!app.canOpen) return;
 
     const window = windowList[app.id];
 
-    if(window.isOpen){
+    if (window.isOpen) {
       closeWindow(app.id);
-    }else{
+    } else {
       openWindow(app.id);
     }
   };

@@ -60,7 +60,10 @@ function Dock() {
     useGSAP(() => {
         const dock = dockRef.current;
 
-        setUpDockAppHover(dock);
+       const  dockAnimationCleanUp =setUpDockAppHover(dock);
+       return ()=>{
+           dockAnimationCleanUp();
+       }
     }, [])
 
 

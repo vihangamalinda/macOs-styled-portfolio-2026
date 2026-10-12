@@ -3,6 +3,7 @@ import { dockApps } from "#constants/index.js";
 import { Tooltip } from "react-tooltip";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import useWindowStore from "#store/window.js";
 
 const DOCK_ICON_CLASSNAME_SELECTOR = ".dock-icon";
 
@@ -62,6 +63,7 @@ const setUpDockAppHover = (container) => {
 
 function Dock() {
   const dockRef = useRef(null);
+  const {openWindow,closeWindow,windowList} = useWindowStore();
 
   useGSAP(() => {
     const dock = dockRef.current;
@@ -72,7 +74,17 @@ function Dock() {
     };
   }, []);
 
-  const toggleApp = (app) => {};
+  const toggleApp = (app) => {
+    if(!app.canOpen) return;
+
+    const window = windowList[app.id];
+
+    if(window.isOpen){
+      closeWindow(app.id);
+    }else{
+      openWindow(app.id);
+    }
+  };
 
   return (
     <section id="dock">

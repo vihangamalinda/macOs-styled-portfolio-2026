@@ -10,9 +10,9 @@ const useWindowStore = create(
 
       openWindow: (windowKey, data = null) =>
         set((state) => {
-          console.log("openWindow", state);
-
           const win = state.windowList[windowKey];
+          validateWindow(win);
+
           win.isOpen = true;
           win.zIndex = state.nextZIndex;
           win.data = data ?? win.data;
@@ -22,6 +22,8 @@ const useWindowStore = create(
       closeWindow: (windowKey) =>
         set((state) => {
           const win = state.windowList[windowKey];
+          validateWindow(win);
+
           win.isOpen = false;
           win.zIndex = INITIAL_Z_INDEX;
           win.data = null;
@@ -29,10 +31,14 @@ const useWindowStore = create(
       focusWindow: (windowKey) =>
         set((state) => {
           const win = state.windowList[windowKey];
+          validateWindow(win);
+
           win.zIndex = state.nextZIndex++;
         }),
     };
   }),
 );
-
+const validateWindow = (window) => {
+  if (!window) throw new Error("Invalid Window");
+};
 export default useWindowStore;

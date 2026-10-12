@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-import {Navbar,Welcome,Dock} from "#components";
+import { useState } from "react";
+import "./App.css";
+import { Navbar, Welcome, Dock } from "#components";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-  <main>
-    <Navbar/>
-    <Welcome/>
-    <Dock/>
-  </main>
-  )
+    <main>
+      <Navbar />
+      <Welcome />
+      <Dock />
+    </main>
+  );
 }
 
-export default App
+export default App;

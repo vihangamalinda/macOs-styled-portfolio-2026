@@ -56,22 +56,25 @@ export const blogPosts = [
     id: 1,
     date: "Sep 2, 2025",
     title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
+      "Bulbasor",
+    image:
+      "https://efour.b-cdn.net/uploads/default/original/3X/d/c/dc31005665202ba368e536520a3e393d616a6197.webp",
     link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
   },
   {
     id: 2,
     date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
+    title: "Gengar",
+    image:
+      "https://efour.b-cdn.net/uploads/default/original/3X/e/a/eaddeb38f8660fb469ec8b9bf810ceb29b607bdd.webp",
     link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
   },
   {
     id: 3,
     date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
+    title: "Totodile",
+    image:
+      "https://efour.b-cdn.net/uploads/default/original/3X/1/f/1f792061029d41c25d1cb0fda9f5961637dbf17f.png",
     link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
   },
 ];

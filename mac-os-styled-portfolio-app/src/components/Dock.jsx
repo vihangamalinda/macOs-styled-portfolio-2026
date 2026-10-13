@@ -47,17 +47,16 @@ const setUpDockAppHover = (container) => {
   if (!container) () => {};
 
   const iconList = container.querySelectorAll(DOCK_ICON_CLASSNAME_SELECTOR);
+  const iconsHoverOverAnimation = (e) =>
+    handleMouseMove(e, container, iconList);
+  const iconsResetting = () => resetIcons(iconList);
 
-  container.addEventListener("mousemove", (e) =>
-    handleMouseMove(e, container, iconList),
-  );
-  container.addEventListener("mouseleave", () => resetIcons(iconList));
+  container.addEventListener("mousemove", iconsHoverOverAnimation);
+  container.addEventListener("mouseleave", iconsResetting);
 
   return () => {
-    container.removeEventListener("mousemove", (e) =>
-      handleMouseMove(e, container, iconList),
-    );
-    container.removeEventListener("mouseleave", () => resetIcons(iconList));
+    container.removeEventListener("mousemove", iconsHoverOverAnimation);
+    container.removeEventListener("mouseleave", iconsResetting);
   };
 };
 

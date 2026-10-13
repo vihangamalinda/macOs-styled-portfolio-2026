@@ -1,3 +1,4 @@
-import Terminal from "./Terminal";
+import Terminal from "#windows/Terminal";
+import Safari from "#windows/Safari.jsx";
 
-export { Terminal };
+export { Terminal ,Safari};

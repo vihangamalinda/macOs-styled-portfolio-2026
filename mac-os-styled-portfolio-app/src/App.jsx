@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import { Navbar, Welcome, Dock } from "#components";
 import {Draggable} from "gsap/Draggable";
+import { Draggable } from "gsap/Draggable";
+import gsap from "gsap";
 
 gsap.registerPlugin(Draggable);
 

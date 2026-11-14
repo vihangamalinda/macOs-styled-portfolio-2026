@@ -23,23 +23,23 @@ export const dockApps = [
 export const techStack = [
   {
     category: "Frameworks & Libraries",
-    items: ["React.js", "Next.js", "Vue.js", "Nuxt.js"],
+    items: ["React.js", "Angular"],
   },
   {
     category: "Languages",
-    items: ["JavaScript", "TypeScript", "PHP"],
+    items: ["JavaScript", "TypeScript", "Java","C++"],
   },
   {
     category: "Mobile",
-    items: ["React Native", "Expo"],
+    items: ["React Native"],
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["Tailwind CSS",  "CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "Laravel"],
+    items: ["Spring Boot"],
   },
   {
     category: "Database",
@@ -48,6 +48,10 @@ export const techStack = [
   {
     category: "Dev Tools",
     items: ["Git", "GitHub", "Docker"],
+  },
+  {
+    category: "Game Development",
+    items: ["Unreal Engine", "Javascript","Java"],
   },
 ];
 

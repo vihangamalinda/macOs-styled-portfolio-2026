@@ -5,7 +5,7 @@ import { Draggable } from "gsap/Draggable";
 import gsap from "gsap";
 
 import { Navbar, Welcome, Dock } from "#components";
-import { Terminal ,Safari} from "#windows/index.js";
+import { Terminal ,Safari,Resume} from "#windows/index.js";
 
 gsap.registerPlugin(Draggable);
 
@@ -20,6 +20,7 @@ function App() {
 
       <Terminal />
       <Safari />
+        <Resume />
     </main>
   );
 }

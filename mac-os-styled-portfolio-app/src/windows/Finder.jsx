@@ -15,20 +15,22 @@ const Finder =()=>{
         return (
             <>
                 <h3>{listName}</h3>
-                {items.map(item =>
-                    (<ul>
-                        <li key={item.id} onClick={() => setActiveLocation(item)}
-                            className={clsx(item.id === activeLocation.id ? "active" : "not-active")}>
-                            <img src={item.icon} className="w-4" alt={item.name}/>
-                            <p className="text-sm font-medium truncate">{item.name}</p>
-                        </li>
+                <ul>
+                    {items.map(item =>
+                        (
+                            <li key={item.id} onClick={() => setActiveLocation(item)}
+                                className={clsx(item.id === activeLocation.id ? "active" : "not-active")}>
+                                <img src={item.icon} className="w-4" alt={item.name}/>
+                                <p className="text-sm font-medium truncate">{item.name}</p>
+                            </li>
 
-                    </ul>))
-                }
+                        ))
+                    }
+                </ul>
 
-            </>
-        )
-    };
+                </>
+                )
+                };
 
     const openItem = (item)=>{
         console.log(item);

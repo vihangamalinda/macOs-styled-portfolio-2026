@@ -327,7 +327,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/kishan-2.jpg",
+      imageUrl: "/images/wallpapers/wallpaper-01.jpg",
     },
     {
       id: 3,

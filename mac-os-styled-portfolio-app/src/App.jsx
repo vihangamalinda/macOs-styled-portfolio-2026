@@ -5,7 +5,7 @@ import { Draggable } from "gsap/Draggable";
 import gsap from "gsap";
 
 import { Navbar, Welcome, Dock } from "#components";
-import { Terminal ,Safari,Resume,Finder,Text} from "#windows/index.js";
+import { Terminal ,Safari,Resume,Finder,Text,ImageWindowContent} from "#windows/index.js";
 
 gsap.registerPlugin(Draggable);
 
@@ -23,6 +23,7 @@ function App() {
         <Resume />
         <Finder />
         <Text/>
+        <ImageWindowContent />
     </main>
   );
 }

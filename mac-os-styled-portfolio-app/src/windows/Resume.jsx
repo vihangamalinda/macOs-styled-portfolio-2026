@@ -13,7 +13,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 // for deployment purpose
-pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dis@${pdfjs.version}/build/pdf.worker.min.mjs`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dis@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const Resume = () => {
     const filePath = "files/resume.pdf";

@@ -318,7 +318,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/kishan.jpg",
+      imageUrl: "/images/wallpapers/wallpaper-03.jpg",
     },
     {
       id: 2,
@@ -336,7 +336,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/kishan-3.jpeg",
+      imageUrl: "/images/wallpapers/wallpaper-02.jpg",
     },
     {
       id: 4,
@@ -346,7 +346,7 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/kishan.jpg",
+      image: "/images/wallpapers/wallpaper-03.jpg",
       description: [
         "Hey! I’m Kishan 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
         "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",

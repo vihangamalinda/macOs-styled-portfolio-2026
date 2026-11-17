@@ -6,10 +6,14 @@ import { Document, Page,pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
+// for local purpose
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.mjs',
     import.meta.url,
 ).toString();
+
+// for deployment purpose
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dis@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const Resume = () => {
     const filePath = "files/resume.pdf";

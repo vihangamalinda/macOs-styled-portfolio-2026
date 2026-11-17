@@ -6,6 +6,11 @@ import gsap from "gsap";
 
 import { Navbar, Welcome, Dock,Home } from "#components";
 import { Terminal ,Safari,Resume,Finder,Text,ImageWindowContent,Contact} from "#windows/index.js";
+import {BackgroundContainer,FrontDisplay} from "#containers/index.js";
+
+//
+// import BackgroundContainer from "./BackgroundContainer.jsx";
+// import FrontDisplay from "#containers/FrontDisplay";
 
 gsap.registerPlugin(Draggable);
 
@@ -13,19 +18,21 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <main>
-      <Navbar />
-      <Welcome />
-      <Dock />
+    <main className="main-container">
+      {/*<Navbar />*/}
+      {/*<Welcome />*/}
+      {/*<Dock />*/}
 
-      <Terminal />
-      <Safari />
-        <Resume />
-        <Finder />
-        <Text/>
-        <ImageWindowContent />
-        <Contact/>
-        <Home />
+      {/*<Terminal />*/}
+      {/*<Safari />*/}
+      {/*  <Resume />*/}
+      {/*  <Finder />*/}
+      {/*  <Text/>*/}
+      {/*  <ImageWindowContent />*/}
+      {/*  <Contact/>*/}
+      {/*  <Home />*/}
+        <BackgroundContainer />
+        <FrontDisplay />
     </main>
   );
 }

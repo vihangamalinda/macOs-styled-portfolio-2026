@@ -7,10 +7,10 @@ body {
   width: 100dvw;
   height: 100dvh;
   overflow: hidden;
-  background-image: url("/images/wallpapers/wallpaper-01.jpg");
+  /*background-image: url("/images/wallpapers/wallpaper-01.jpg");*/
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
 }
 
 @theme {

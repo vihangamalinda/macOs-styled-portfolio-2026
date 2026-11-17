@@ -422,3 +422,11 @@ export const WINDOW_CONFIG = {
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
+
+export const wallpapers = [
+    "/images/wallpapers/wallpaper-01.jpg",
+  "/images/wallpapers/wallpaper-02.jpg",
+  "/images/wallpapers/wallpaper-03.jpg",
+  // "/images/wallpapers/wallpaper-04.jpg",
+
+]

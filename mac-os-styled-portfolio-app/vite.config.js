@@ -23,6 +23,7 @@ export default defineConfig({
         dirname(fileURLToPath(import.meta.url)),
         "src/windows",
       ),
+      "#containers": resolve(dirname(fileURLToPath(import.meta.url)), "src/containers"),
     },
   },
 });
